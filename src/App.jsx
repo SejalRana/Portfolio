@@ -5,7 +5,7 @@ import { About, Contact, Experience,Certifications, Hero, Navbar, Tech, Works, S
 const App = () => {
    
   return (
-    <BrowserRouter>
+    <BrowserRouter basename={process.env.PUBLIC_URL}>
       <div className="relative z-0 bg-primary">
         <div className="bg-hero-pattern bg-cover bg-no-repeat bg-center">
           <Navbar />
