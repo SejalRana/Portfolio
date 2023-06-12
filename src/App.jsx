@@ -1,11 +1,11 @@
-import { BrowserRouter } from 'react-router-dom';
+import { HashRouter } from 'react-router-dom';
 import { About, Contact, Experience,Certifications, Hero, Navbar, Tech, Works, StarsCanvas } from './components';
 
 
 const App = () => {
    
   return (
-    <BrowserRouter basename={process.env.PUBLIC_URL}>
+    <HashRouter base="/">
       <div className="relative z-0 bg-primary">
         <div className="bg-hero-pattern bg-cover bg-no-repeat bg-center">
           <Navbar />
@@ -23,7 +23,7 @@ const App = () => {
         </div>
 
       </div>
-    </BrowserRouter>
+    </HashRouter>
   )
 }
 
